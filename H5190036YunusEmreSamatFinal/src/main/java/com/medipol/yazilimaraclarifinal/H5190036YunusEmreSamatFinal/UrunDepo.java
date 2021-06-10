@@ -36,7 +36,7 @@ public final class UrunDepo {
 					URUNLER.remove(u);
 				}	
 			}
-			return "Urun Silinmistir..";
+			return "Urun Silinmistir.";
 		}
 		else {
 			return null;
