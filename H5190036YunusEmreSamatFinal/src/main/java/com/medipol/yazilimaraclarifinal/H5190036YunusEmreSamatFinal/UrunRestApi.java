@@ -20,8 +20,8 @@ public class UrunRestApi {
 	
 	@PostMapping("/sil")
 	public String sil(@RequestBody Urun urun){
-		String urunListe = UrunDepo.urunSil(urun.getAd(),urun.getFiyat());
-		return urunListe;
+		String mesaj = UrunDepo.urunSil(urun.getAd(),urun.getFiyat());
+		return mesaj;
 	}
 
 }
