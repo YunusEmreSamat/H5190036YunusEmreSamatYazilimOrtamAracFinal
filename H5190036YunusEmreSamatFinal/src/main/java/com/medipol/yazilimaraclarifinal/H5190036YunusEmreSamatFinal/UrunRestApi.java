@@ -19,8 +19,8 @@ public class UrunRestApi {
 	}
 	
 	@PostMapping("/sil")
-	public List<Urun> sil(@RequestBody Urun urun){
-		List<Urun> urunListe = UrunDepo.urunSil(urun.getAd(),urun.getFiyat());
+	public String sil(@RequestBody Urun urun){
+		String urunListe = UrunDepo.urunSil(urun.getAd(),urun.getFiyat());
 		return urunListe;
 	}
 

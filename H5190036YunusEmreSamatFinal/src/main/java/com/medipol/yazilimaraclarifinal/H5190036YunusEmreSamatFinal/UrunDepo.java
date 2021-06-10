@@ -29,14 +29,14 @@ public final class UrunDepo {
 		}
 	}
 	
-	public static List<Urun> urunSil(String ad,String fiyat) {		
+	public static String urunSil(String ad,String fiyat) {		
 		if(ad != null && fiyat != null) {
 			for(Urun u:URUNLER) {
 				if(u.getAd().equals(ad) && u.getFiyat().equals(fiyat)) {
 					URUNLER.remove(u);
 				}	
 			}
-			return URUNLER;
+			return "Urun Silinmistir.";
 		}
 		else {
 			return null;
