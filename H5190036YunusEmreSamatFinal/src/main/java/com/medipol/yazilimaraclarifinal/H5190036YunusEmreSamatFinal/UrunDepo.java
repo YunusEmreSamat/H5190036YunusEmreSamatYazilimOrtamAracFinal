@@ -36,7 +36,7 @@ public final class UrunDepo {
 					URUNLER.remove(u);
 				}	
 			}
-			return URUNLER; 
+			return URUNLER;
 		}
 		else {
 			return null;
