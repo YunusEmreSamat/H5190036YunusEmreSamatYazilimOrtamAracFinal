@@ -22,6 +22,6 @@ public class UrunRestApi {
 	public  List<Urun> sil(@RequestBody Urun urun){
 		List<Urun> urunliste = UrunDepo.urunSil(urun.getAd(),urun.getFiyat());
 		return urunliste;
-	}
+	} 
 
 }
